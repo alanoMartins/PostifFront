@@ -1,0 +1,27 @@
+
+<div class="container">
+  <md-whiteframe class="md-whiteframe-z2" layout="column" layout-align="center center">
+    <h1>Board postit</h1>
+
+    <md-button ng-click="info.logout()">X</md-button>
+
+    <div class="alert alert-danger" role="alert" ng-show="screen.error">Dados incorretos</div>
+
+    <div class="board"> 
+      
+
+        <div class='md-padding background-color: lightblue;' layout="row" layout-wrap>
+          <md-card style="width: 350px;" ng-repeat="card in info.cards" class="card">
+            <md-card-content>
+              <h2>{{card.title}}</h2>
+              <p>{{card.description}}</p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="end center">
+              <md-button>View</md-button>
+            </div>
+          </md-card>
+        </div>
+
+    </div>
+  </md-whiteframe>
+</div>
