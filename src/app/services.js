@@ -1,7 +1,7 @@
 'use strict';
 
 var postifServices = angular.module('postifServices', ['ngResource']);
-postifServices.urlMagic = '://127.0.0.1:';
+postifServices.urlMagic = '://postifherokuapp.herokuapp.com';
 postifServices.emptyRequest = {};
 
 postifServices
@@ -28,7 +28,7 @@ postifServices
 })
 .factory('PostifService', function($resource,$http,$cookies,$state,$mdToast) {
 	var PostifService = {};
-	var urlBase = 'http'+postifServices.urlMagic+'8080';
+	var urlBase = 'https'+postifServices.urlMagic;
 
 	function getHeader() {
 		var token = $cookies.getObject('token');

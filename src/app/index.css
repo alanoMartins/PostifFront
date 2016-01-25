@@ -94,5 +94,7 @@ section.jumbotron h1 {
 
 .board {
   background-color: lightblue;
+  height: 100%;
+  width: 100%;
 }
 
