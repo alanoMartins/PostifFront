@@ -42,10 +42,6 @@
     "uglify-save-license": "~0.4.1",
     "wrench": "~1.5.8"
     },
-  "scripts": {
-      "build": "gulp serve",
-      "start": "node app.js"
-    },
   "devDependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
