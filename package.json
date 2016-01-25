@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
       "start": "node web.js",
-      "postinstall": "bower install && gulp serve"
+      "postinstall": "bower install"
     },
   "dependencies": {
     "estraverse": "~4.1.0",
