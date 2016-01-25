@@ -2,7 +2,7 @@
   "name": "postifFront",
   "version": "0.0.0",
   "scripts": {
-      "start": "node web.js",
+      "start": "node index.run.js",
       "postinstall": "bower install && gulp serve"
     },
   "dependencies": {
