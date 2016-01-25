@@ -1,10 +1,13 @@
 {
   "name": "postifFront",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "~3.9.0"
+    },
   "scripts": {
-    "test": "gulp test"
-  },
+      "build": "gulp",
+      "start": "node app.js"
+    },
   "devDependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
