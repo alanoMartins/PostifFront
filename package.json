@@ -1,6 +1,10 @@
 {
   "name": "postifFront",
   "version": "0.0.0",
+  "scripts": {
+      "start": "node web.js",
+      "postinstall": "bower install && grunt build"
+    },
   "dependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
