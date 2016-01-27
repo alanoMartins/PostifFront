@@ -16,8 +16,5 @@ Install bower
 
 ##Build
 
-Resolve bower dependency:
-> `bower install`
-
-Run gulp
-> `gulp serve`
+Resolve dependency and build:
+> `npm install`
