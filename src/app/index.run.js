@@ -1,25 +1,25 @@
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
 
-  angular
-    .module('postifFront')
-    .run(runBlock);
+//   angular
+//     .module('postifFront')
+//     .run(runBlock);
 
-  /** @ngInject */
-  function runBlock($log, $rootScope, $state, $mdToast, Auth) {
+//   /** @ngInject */
+//   function runBlock($log, $rootScope, $state, $mdToast, Auth) {
 
-    $rootScope.$on('$stateChangeStart', function (event, toState) {
+//     $rootScope.$on('$stateChangeStart', function (event, toState) {
 
-        if (!Auth.logged() && toState.name != "login")  {
-          event.preventDefault();
-            $state.go('login');
-        }
+//         if (!Auth.logged() && toState.name != "login")  {
+//           event.preventDefault();
+//             $state.go('login');
+//         }
         
-    });
+//     });
 
-    $log.debug('runBlock end');
+//     $log.debug('runBlock end');
 
 
-  }
+//   }
 
-})();
+// })();

@@ -7,7 +7,6 @@ angular
 	$scope.screen = {};
 	$scope.screen.error = false;
 
-	// TODO - Redirecionar usuário pra página correta
 	$cookies.remove('user');
 
 	$scope.info.login = function() {
@@ -25,9 +24,6 @@ angular
 
 				// Put something more strong in cookie...
 				$cookies.putObject('token', user.token);
-
-				var token = $cookies.getObject('token');
-
 				$state.go('board');
 			},
 			function(error, status){
@@ -41,9 +37,6 @@ angular
 				} else {
 					PostifService.showToast('Erro ao tentar conectar ao servidor');
 				}
-
-				// TODO - mostrar error de login
-				$scope.screen.error = true;
 			});
 	};
 
