@@ -2,16 +2,22 @@
 
 Angular front-end for postif project.
 
+##Install npm, gulp and bower
+
+Install npm:
+
+> `https://nodejs.org/en/download/stable/`
+
+Install gulp
+>`npm install --global gulp`
+
+Install bower
+>`npm install -g bower`
+
 ##Build
 
-Install npm, gulp and bower:
-
-`https://nodejs.org/en/download/stable/
-npm install --global gulp
-npm install -g bower`
-
 Resolve bower dependency:
-`bower install`
+> `bower install`
 
 Run gulp
-`gulp serve`
+> `gulp serve`
